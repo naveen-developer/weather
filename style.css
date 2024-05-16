@@ -1,0 +1,220 @@
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+      }
+      main {
+        height: 100vh;
+        background-color: #FFEB3D;
+      }
+      .title {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; /* Add position: relative */
+      }
+    .title p.title-text {
+    font-size: 25rem;
+    background: linear-gradient(to bottom, #323232, #00000063);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+      .apple-watch-container {
+        position: absolute;
+        top: 64%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Move back by half of its own width and height */
+      }
+      .apple-watch {
+        display: block;
+        max-width: 650px;
+        margin: auto;
+      }
+.screen-design {
+    position: absolute;
+    top: 24%;
+    left: 31.5%;
+    width: 37%;
+    height: 50%;
+    border-radius: 66px;
+    background-color: #FFFFC0;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px 0px 5px;
+}
+.sec1 p, .sec3 p {
+  font-size: 1rem;
+    font-family: "Radio Canada Big", sans-serif;
+}
+.sec1 p.time{
+  font-size: 2rem;
+}
+
+.sec1 .weather-icon img{
+  width: 7rem;
+  position: absolute;
+    top: 20px;
+}
+.sec2{
+  margin-top: 3rem;
+}
+.sec2 p.degree{
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 5.5rem;
+    position: absolute;
+    left: 60px;
+    top: 75px;
+}
+.sec2 p.degree sup{
+  font-size: 3.5rem;
+  vertical-align: text-top;
+}
+.sec3{
+      position: absolute;
+    bottom: 15px;
+    width: 93%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2DC9B;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 0px 10px 15px;
+}
+
+
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInbottom {
+  0% {
+    top: -140px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+.degreeAnimation {
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+.sec3Animation{
+  animation: 1s ease-out 0s 1 slideInRight;
+}
+.weather-iconAnimation{
+  animation: 1s ease-out 0s 1 slideInbottom;
+}
+.search-section{
+      position: absolute;
+    top: 20px;
+    left: 35%;
+    z-index: 1;
+}
+.search-section input {
+    width: 30rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border: none;
+    background-color: #ffffc0;
+    font-family: "Radio Canada Big", sans-serif;
+}
+.search-section button{
+      padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    background-color: #ffffc0;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+.search-section {
+    position: absolute;
+    left: 25%;
+}
+.search-section input {
+    width: 13rem;
+}
+.title {
+    height: 50vh;
+}
+.title p.title-text {
+    font-size: 7rem;
+}
+.apple-watch-container {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.apple-watch {
+    max-width: 370px;
+}
+.screen-design {
+    border-radius: 34px;
+}
+.sec1 .location{
+	    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+.sec1 .location .time{
+	text-align: right;
+}
+.sec1 p, .sec3 p {
+    font-size: 1rem;
+}
+.sec1 .weather-icon img {
+    width: 3rem;
+    position: absolute;
+    top: 15px;
+}
+.sec1 p.time {
+    font-size: 1.5rem;
+}
+.sec2 p.degree {
+    font-size: 4rem;
+    position: absolute;
+    left: 22px;
+    top: 75px;
+}
+.sec2 p.degree sup {
+    font-size: 2rem;
+}
+.sec3 {
+    position: absolute;
+    bottom: -175px;
+    left: -100px;
+    width: 20rem;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+}

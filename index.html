@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Weather application</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="search-section">
+        <input type="text" placeholder="please eneter city" id="city" value="Mumbai" />
+        <button onclick="checkWeather()" id="cbutton"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+      </div>
+      <div class="title">
+        <p class="title-text titleAnimation">Sunny</p>
+        <div class="apple-watch-container">
+          <img src="watch.png" alt="Apple Watch" class="apple-watch">
+          <div class="screen-design">
+            <!-- Your CSS design content goes here -->
+            <div class="sec1">
+              <div class="weather-icon">
+                <img src="sun-icon.png" alt="" class="weather-picture weather-iconAnimation" />
+              </div>
+              <div class="location">
+                <p><span><i class="fa-solid fa-location-dot"></i></span><span> </span><span class="city-name">Mumbai</span></p>
+                <p class="time">13:45</p>
+              </div>
+            </div>
+            <div class="sec2">
+              <p class="degree degreeAnimation">35<sup>o</sup></p>
+            </div>
+            <div class="sec3 sec3Animation">
+              <div class="rain">
+                <p><span><i class="fa-solid fa-cloud-rain"></i></span></p>
+                <p class="rain-value">0%</p>
+              </div>
+              <div class="temparature">
+                <p><span><i class="fa-solid fa-temperature-three-quarters"></i></span></p>
+                <p class="temparature-value">79%</p>
+              </div>
+              <div class="wind">
+                <p><span><i class="fa-solid fa-wind"></i></span></p>
+                <p class="wind-value">2m/s</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
