@@ -11,6 +11,21 @@
         height: 100vh;
         background-color: #FFEB3D;
       }
+      .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+  .error-message{
+    display: none;
+      text-align: center;
+    margin-top: 7px;
+  }
       .title {
         height: 80vh;
         display: flex;
@@ -123,7 +138,7 @@
 .sec3Animation{
   animation: 1s ease-out 0s 1 slideInRight;
 }
-.weather-iconAnimation{
+.weather-pictureAnimation{
   animation: 1s ease-out 0s 1 slideInbottom;
 }
 .search-section{

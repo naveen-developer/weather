@@ -13,9 +13,11 @@
   </head>
   <body>
     <main class="main-container">
+      <h1 class="sr-only">Weather Information</h1>
       <div class="search-section">
-        <input type="text" placeholder="please eneter city" id="city" value="Mumbai" />
-        <button onclick="checkWeather()" id="cbutton"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+        <input type="text" placeholder="please eneter city" id="city" value="pune" aria-label="City Input: Please enter the name of the city you want to check the weather for" />
+        <button onclick="checkWeather()" id="cbutton" aria-label="search"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+        <p class="error-message"><span><i class="fa-solid fa-circle-xmark"></i><span> </span><span class="error-text">Please entern valid city name!</span></p>
       </div>
       <div class="title">
         <p class="title-text titleAnimation">Sunny</p>
@@ -25,7 +27,7 @@
             <!-- Your CSS design content goes here -->
             <div class="sec1">
               <div class="weather-icon">
-                <img src="sun-icon.png" alt="" class="weather-picture weather-iconAnimation" />
+                <img src="sun-icon.png" alt="" class="weather-picture weather-pictureAnimation" />
               </div>
               <div class="location">
                 <p><span><i class="fa-solid fa-location-dot"></i></span><span> </span><span class="city-name">Mumbai</span></p>
