@@ -30,7 +30,7 @@ async function checkWeather(){
         const data = await response.json();
         console.log(data)
         if(data.cod == '404'){
-          alert(`Sorry, the entered city ${city} name is invalid. Please try again.`);
+          //alert(`Sorry, the entered city ${city} name is invalid. Please try again.`);
           errorMessage(city);
         }
         // (data.cod === '404') ? alert(data.message) : "";

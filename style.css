@@ -22,6 +22,7 @@
     border: 0;
 }
   .error-message{
+    position: absolute;
     display: none;
       text-align: center;
     margin-top: 7px;
@@ -231,5 +232,9 @@
     padding: 15px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.error-message {
+    margin-top: 15px;
+    font-size: 0.8rem;
 }
 }
